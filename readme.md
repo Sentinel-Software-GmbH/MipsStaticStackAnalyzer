@@ -32,7 +32,7 @@ Under the hood
   * "</labelname/>" for function names, where "<.xxxy>" is interpreted as compiler internal label and ignored
   * " \taddiu\tsp,sp," to find stack pointer modification.
   * " \tb" and " \tj" for any jumps.
-    - "jr" semms to be switch case, those are ignored.
+    - "jr" seems to be switch case, those are ignored.
     - "jalr ra" are return jumps, ignored.
     - any other "jalr" are indirect jumps in c-code, which cannot be traced.
 - The list of jumps is then used to determine the deepest stack usage.
